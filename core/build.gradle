@@ -1,0 +1,17 @@
+plugins {
+  id 'mazewands.library'
+}
+
+dependencies {
+}
+
+publishing {
+  publications {
+    gpr(MavenPublication) {
+      groupId = 'mazeneko.mazewands'
+      artifactId = 'core'
+      version = gitVersion()
+      from components.java
+    }
+  }
+}
