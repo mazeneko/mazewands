@@ -9,8 +9,8 @@ dependencies {
 publishing {
   publications {
     gpr(MavenPublication) {
-      groupId = 'mazeneko.mazewands'
-      artifactId = 'persistence'
+      groupId = 'io.github.mazeneko'
+      artifactId = 'mazewands-persistence'
       version = gitVersion()
       from components.java
     }
